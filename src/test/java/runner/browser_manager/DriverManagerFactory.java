@@ -1,9 +1,5 @@
 package runner.browser_manager;
 
-import org.openqa.selenium.chrome.ChromeDriver;
-
-import java.sql.DriverManager;
-
 public class DriverManagerFactory {
 
     public static DriverManager getManager(DriverType type){
@@ -16,7 +12,7 @@ public class DriverManagerFactory {
                 break;
 
             case FIREFOX:
-                driverManager = new ChromeDriverManager();
+                driverManager = new FirefoxDriverManager();
                 break;
 
             default:
